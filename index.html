@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#4a6cf7,#6c63ff);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+nav{
+    margin-top:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin:0 10px;
+    padding:8px 18px;
+    border:1px solid white;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:white;
+    color:#4a6cf7;
+}
+
+section{
+    padding:60px 10%;
+}
+
+.about{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.about img{
+    width: 100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.skills ul{
+    list-style:none;
+}
+
+.skills li{
+    background:#fff;
+    margin:10px 0;
+    padding:12px;
+    border-left:5px solid #4a6cf7;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input, textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#4a6cf7;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#3555d6;
+}
+
+footer{
+    text-align:center;
+    background:#222;
+    color:white;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>THIS IS MY PORTFOLIO</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+        <img src="https://via.placeholder.com/180" alt=    "    Profile ">
+        <div>
+            <p>
+                Hello! I am a web developer passionate about passionate about creating modern and responsive websites
+                I am learning new technologies and buliding the projects. 
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>React</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio created using HTML and CSS.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Calculator App</h3>
+            <p>Simple calculator using JavaScript.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <p>Weather forecasting app using API integration.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 My Portfolio | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
